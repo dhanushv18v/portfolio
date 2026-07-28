@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { GraduationCap, Code2, Users, RefreshCw, Clock, Terminal, Brain } from "lucide-react";
+import { GraduationCap, Brain } from "lucide-react";
 
 export const About = () => {
   return (

@@ -4,7 +4,7 @@ import {
   SiTailwindcss, SiVite, SiNodedotjs, SiExpress, SiMongodb, 
   SiMysql, SiGit, SiGithub, SiVercel, SiNetlify, SiRender
 } from "react-icons/si";
-import { FaJava, FaDatabase, FaCodeBranch } from "react-icons/fa";
+import { FaJava, FaDatabase } from "react-icons/fa";
 import { VscCode } from "react-icons/vsc";
 import { DiIntellij } from "react-icons/di";
 import { BsDiagram3 } from "react-icons/bs";
@@ -91,7 +91,7 @@ const containerVariants = {
 
 const cardVariants = {
   hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" as const } },
 };
 
 export const Skills = () => {

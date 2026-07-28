@@ -77,9 +77,7 @@ export const Achievements = () => {
                   {achievement.description}
                 </p>
                 
-                <div className="mt-auto pt-6 border-t border-white/10 flex items-center justify-between text-sm relative z-10">
-                  <span className="text-white/50">{achievement.date}</span>
-                </div>
+
               </motion.div>
             ))}
           </div>

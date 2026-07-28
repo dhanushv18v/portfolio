@@ -13,10 +13,11 @@ export const ParticleNetwork = ({ children }: { children?: React.ReactNode }) =>
     let animationFrameId: number;
     let particles: Particle[] = [];
 
-    // Configuration
-    const particleCount = 80;
-    const connectionDistance = 150;
-    const mouseConnectionDistance = 200;
+    // Configuration - responsive for mobile
+    const isMobile = window.innerWidth < 768;
+    const particleCount = isMobile ? 35 : 80;
+    const connectionDistance = isMobile ? 90 : 150;
+    const mouseConnectionDistance = isMobile ? 100 : 200;
 
     // Responsive Canvas
     const resizeCanvas = () => {
